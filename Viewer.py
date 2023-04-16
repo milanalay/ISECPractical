@@ -67,14 +67,15 @@ def view(grid):
             print("MESSAGE 2") # Out of bounds.
             
         else:
-            if grid[currentRow][currentCol] == Maze.EMPTY:
-                grid[currentRow][currentCol] = VISITED
+            cell = grid[currentRow][currentCol]
+            if cell == Maze.EMPTY:
+                cell = VISITED
                 
-            elif grid[currentRow][currentCol] == Maze.WALL:
+            elif cell == Maze.WALL:
                 done = True
                 print("MESSAGE 3") # Hit wall.
 
-            elif grid[currentRow][currentCol] == Maze.END:
+            elif cell == Maze.END:
                 done = True
                 solved = True
                 print("MESSAGE 4") # Solved.
