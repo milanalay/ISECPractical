@@ -25,3 +25,7 @@ if __name__ == "__main__":
     ]
                     
     GridViewer.view(grid)
+
+    print("You have no idea where you're going.")
+    print("You fall into the chasm of doom.")
+    print("solved")
