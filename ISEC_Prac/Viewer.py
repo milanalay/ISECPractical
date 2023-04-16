@@ -10,13 +10,13 @@ def view(grid):
                 print("  ", end = "")
                     
             elif grid[i][j] == Maze.WALL:
-                print("@@", end = "")
+                print("aa", end = "")
                     
             elif grid[i][j] == Maze.START:
-                print("^^", end = "")
+                print("bb", end = "")
                     
             elif grid[i][j] == Maze.END:
-                print("$$", end = "")
+                print("cc", end = "")
                     
             elif grid[i][j] == Maze.VISITED:
                 print("..", end = "")
